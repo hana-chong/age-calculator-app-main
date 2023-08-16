@@ -164,8 +164,7 @@ hr {
 .output {
     font-size: 32px;
     position: relative;
-    bottom: 9vh;
-    line-height: .8rem;
+    bottom: 8.5vh
 }
 small {
     font-size: 0.8rem;

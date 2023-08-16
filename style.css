@@ -1,0 +1,173 @@
+@font-face {
+    font-family: "Poppins";
+    src: url(./assets/fonts/Poppins-Italic.ttf);
+    font-weight: normal;
+    font-style: italic;
+}
+@font-face {
+    font-family: "Poppins";
+    src: url(./assets/fonts/Poppins-Bold.ttf);
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Poppins";
+    src: url(./assets/fonts/Poppins-ExtraBoldItalic.ttf);
+    font-weight: bolder;
+    font-style: italic;
+}
+* {
+    box-sizing: border-box;
+    font-family: "Poppins"
+}
+body {
+    background-color: hsl(0, 0%, 94%);
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background-color: white;
+    border-radius: 15px 15px 75px 15px;
+    height: 85vh;
+    width: 85vw;
+    margin: 10vh auto;
+    min-width: 300px;
+    position: relative;
+}
+
+.input-flex {
+    color: hsl(0, 1%, 44%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.7rem;
+    letter-spacing: 0.2rem;
+    padding-top: 7vh;
+    text-transform: uppercase;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0.5rem; 
+}
+
+.input-container input[type=number] {
+    width: 21vw;
+    height:9vh;
+    border: 1px hsl(0, 0%, 86%) solid;
+    border-radius: 7px;
+    margin-top: 0.1rem; 
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+  
+small {
+    color: red;
+    font-weight: bold;
+    text-transform: capitalize;
+    position: absolute;
+    top: 25%;
+    font-size: .4rem;
+    letter-spacing: 0.1rem;
+  }
+
+hr {
+    width: 70%;
+    color:hsl(0, 0%, 86%);
+    z-index: 0;
+    position:absolute;
+    padding:0;
+    top: 34%;
+    left: 50%;
+    opacity: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.submit-btn {
+    background-color:hsl(259, 100%, 65%);
+    border:none;
+    width:13vw;
+    height:13vw;
+    justify-content: center;
+    border-radius: 50%;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.submit-btn:hover {
+    background-color: black;
+}
+
+.submit-btn img {
+    position: absolute;
+    width: 50%;
+    height:auto;
+    top: 25%;
+    left: 25%;
+}
+
+.output {
+    font-weight: bolder;
+    font-style: italic;
+    font-size: 1.2rem;
+    margin: 15vh 7vw;
+}
+
+.output-year, .output-month, .output-day {
+    color:hsl(259, 100%, 65%);
+}
+.attribution {
+    font-size: 11px; text-align: center; 
+}
+.attribution a {
+    color: hsl(228, 45%, 44%); 
+}
+
+
+
+@media only screen and (min-width: 600px) {
+.container {
+    width: 55vw;
+}
+.input-container {
+    margin: 0 1vw;
+}
+.input-flex {
+    margin-left: 4vw;
+    justify-content: left;
+    font-size: 1rem;
+}
+.input-container input[type=number] {
+    width: 11vw;
+    margin-top: 1rem;
+}
+.submit-btn {
+    width:5vw;
+    height:5vw;
+    margin-left:35%;
+    transform: translateY(-50%);         
+}
+hr {
+    width: 86%;
+}
+.output {
+    font-size: 32px;
+    position: relative;
+    bottom: 7vh;
+}
+small {
+    font-size: 0.8rem;
+}
+}
+

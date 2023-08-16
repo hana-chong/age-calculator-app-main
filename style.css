@@ -162,8 +162,8 @@ hr {
     width: 86%;
 }
 .output {
-    font-size: 32px;
-    position: absolute;
+    font-size: 2rem;
+    position: relative;
     bottom: 9vh;
 }
 small {

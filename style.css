@@ -165,6 +165,7 @@ hr {
     font-size: 32px;
     position: relative;
     bottom: 9vh;
+    line-height: 1rem;
 }
 small {
     font-size: 0.8rem;

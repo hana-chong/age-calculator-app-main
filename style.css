@@ -163,7 +163,7 @@ hr {
 }
 .output {
     font-size: 32px;
-    position: relative;
+    position: absolute;
     bottom: 9vh;
 }
 small {
